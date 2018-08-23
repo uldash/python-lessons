@@ -1,0 +1,20 @@
+f = open('file00.txt', 'r')
+x = f.read(5)
+print(repr(x))
+y = f.read()
+y = y.splitlines()
+print(repr(y))
+f.close()
+
+f = open('file00.txt', 'r')
+x = f.readline().strip()
+print(x)
+x = f.readline().strip()
+print(x)
+f.close()
+
+f = open('file00.txt', 'r')
+for line in f:
+    line = line.rstrip()
+    print(line)
+f.close()

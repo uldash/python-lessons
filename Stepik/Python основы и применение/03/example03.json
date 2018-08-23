@@ -1,0 +1,19 @@
+[
+    {
+        "name": "B",
+        "parents": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "name": "C",
+        "parents": [
+            "A"
+        ]
+    },
+    {
+        "name": "A",
+        "parents": []
+    }
+]

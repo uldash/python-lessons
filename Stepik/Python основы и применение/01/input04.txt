@@ -1,0 +1,18 @@
+4
+A
+B : A
+C : A
+D : B C
+6
+E E
+A B
+A A
+B D
+C D
+D A
+No
+Yes
+Yes
+Yes
+Yes
+No

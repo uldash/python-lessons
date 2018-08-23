@@ -1,1 +1,1 @@
-# python-lessons
+# Учебные примеры Python 3
