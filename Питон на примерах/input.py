@@ -8,5 +8,5 @@ Created on Wed May 30 20:43:55 2018
 print("Hi!")
 name = input("What is you name?")
 print(type(name))
-#del name
-print("Good day, ", name+"!")
+# del name
+print("Good day, ", name + "!")

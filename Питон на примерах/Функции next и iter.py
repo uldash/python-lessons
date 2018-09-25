@@ -5,7 +5,7 @@ Created on Sun Jun 24 15:12:17 2018
 @author: user
 """
 
-s=iter([1,2,3])
+s = iter([1, 2, 3])
 print(next(s))
 print(next(s))
 print(next(s))

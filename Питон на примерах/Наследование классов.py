@@ -5,18 +5,23 @@ Created on Mon Jun 11 14:27:51 2018
 @author: user
 """
 
+
 class BaseClass:
-    name_base="Класс BaseClass"
+    name_base = "Класс BaseClass"
+
     def say_base(self):
         print("Метод say_base()")
-        
+
+
 class NewClass(BaseClass):
-    name_new="Класс NewClass"
+    name_new = "Класс NewClass"
+
     def say_new(self):
         print("Метод say_new()")
 
-obj_base=BaseClass()
-obj_new=NewClass()
+
+obj_base = BaseClass()
+obj_new = NewClass()
 print("Класс BaseClass и экземпля obj_base:")
 print(BaseClass.name_base)
 obj_base.say_base()

@@ -5,20 +5,26 @@ Created on Sat Jun  9 13:22:04 2018
 @author: user
 """
 
+
 class MyClass:
     pass
 
-A=MyClass()
-B=MyClass()
-C=MyClass()
+
+A = MyClass()
+B = MyClass()
+C = MyClass()
+
 
 def hello():
     print("Метод экземпляра - 'hello'")
+
+
 def hi():
     print("Еще один метод - 'hi'")
 
-A.say=hello
-C.say=hi
+
+A.say = hello
+C.say = hi
 
 A.say()
 try:
@@ -38,11 +44,15 @@ except AttributeError:
     print("Такого метода нет")
 C.say()
 
-#MyClass.say=hello
-#A.say()
+# MyClass.say=hello
+# A.say()
 
-str="aaa"
+str = "aaa"
+
+
 def myupper():
     print("dugahga")
-str.upper=myupper
+
+
+str.upper = myupper
 print(str.upper())

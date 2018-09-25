@@ -5,7 +5,7 @@ Created on Sun Jun 24 14:17:45 2018
 @author: user
 """
 
-err_one=ZeroDivisionError("Ошибка деления на ноль!")
+err_one = ZeroDivisionError("Ошибка деления на ноль!")
 print('Сейчас "возникает" ошибка.')
 print("Первая:")
 print(err_one)
@@ -20,7 +20,7 @@ except ZeroDivisionError as err_two:
         print("Третья")
         print(err_three)
         try:
-            a=1/0
+            a = 1 / 0
         except ZeroDivisionError as err_four:
             print("Четвертая:")
             print(err_four)

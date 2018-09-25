@@ -5,13 +5,15 @@ Created on Sat Jun  2 12:59:26 2018
 @author: user
 """
 
-def find_value(f,x):
-    print("x =",x,"-> f(x) =",f(x))
 
-my_func=lambda x: 1/(1+x**2)
+def find_value(f, x):
+    print("x =", x, "-> f(x) =", f(x))
 
-find_value(my_func,2.0)
-find_value(lambda x: x*(1-x),0.5)
 
-z=1+(lambda x,y:x*y-x**2)(2,3)**2
-print("z =",z)
+my_func = lambda x: 1 / (1 + x**2)
+
+find_value(my_func, 2.0)
+find_value(lambda x: x * (1 - x), 0.5)
+
+z = 1 + (lambda x, y: x * y - x**2)(2, 3)**2
+print("z =", z)
