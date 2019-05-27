@@ -1,8 +1,0 @@
-{
-    "python.pythonPath": "C:\\Python\\Python_3_7_2\\python.exe",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "yapf"
-}
