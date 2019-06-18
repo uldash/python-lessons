@@ -5,23 +5,29 @@ Created on Fri Jul  6 15:46:40 2018
 @author: user
 """
 
+
 class A:
-   def foo(self):
-      print("A")
+    def foo(self):
+        print("A")
+
 
 class B(A):
-   pass
+    pass
+
 
 class C(A):
-   def foo(self):
-      print("C")
+    def foo(self):
+        print("C")
+
 
 class D:
-   def foo(self):
-      print("D")
+    def foo(self):
+        print("D")
+
 
 class E(B, C, D):
-   pass
+    pass
+
 
 print(E.mro())
 E().foo()

@@ -87,8 +87,10 @@ Yes
 Yes
 No
 '''
-#Отыщем путь в заданном графе
-def find_path(graph,start,end,path=[]):
+# Отыщем путь в заданном графе
+
+
+def find_path(graph, start, end, path=[]):
     path = path + [start]
     if start == end:
         return path
@@ -97,28 +99,30 @@ def find_path(graph,start,end,path=[]):
     for node in graph[start]:
         if node not in path:
             newpath = find_path(graph, node, end, path)
-            if newpath: return newpath
+            if newpath:
+                return newpath
     return None
 
-f=open('input.txt','r')
-#n=int(input())
-n=int(f.readline())
-cl=dict()
-lst=list()
+
+f = open('input.txt', 'r')
+# n=int(input())
+n = int(f.readline())
+cl = dict()
+lst = list()
 for i in range(n):
-    #lst=input().split()
-    lst=f.readline().strip().split()
-    cl.update({lst[0]:list()})
+    # lst=input().split()
+    lst = f.readline().strip().split()
+    cl.update({lst[0]: list()})
     cl[lst[0]].extend(lst[2:])
 print(cl)
 
-#n=int(input())
-n=int(f.readline())
+# n=int(input())
+n = int(f.readline())
 for i in range(n):
-    #end,start=input().split()
-    end,start=f.readline().split()
-    #print(find_path(cl,start,end))
-    if find_path(cl,start,end):
+    # end,start=input().split()
+    end, start = f.readline().split()
+    # print(find_path(cl,start,end))
+    if find_path(cl, start, end):
         print('Yes')
     else:
         print('No')
