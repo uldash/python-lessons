@@ -5,17 +5,19 @@ Created on Mon Jul  9 10:30:28 2018
 @author: user
 """
 
-def f(x,y):
+
+def f(x, y):
     try:
         return x/y
-    #except TypeError:
+    # except TypeError:
     #    print('Type error')
-    #except ZeroDivisionError:
+    # except ZeroDivisionError:
     #    print('Zero Division :(')
-    except (TypeError,ZeroDivisionError) as err:
+    except (TypeError, ZeroDivisionError) as err:
         print(type(err))
         print(err)
         print(err.args)
 
-f(5,[])
-print(f(5,0))
+
+f(5, [])
+print(f(5, 0))

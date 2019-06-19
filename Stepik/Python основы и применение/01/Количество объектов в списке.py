@@ -30,15 +30,15 @@ objects = [1, 2, 1, 2, 3] # будем считать, что одинаковы
 """
 import ctypes
 
-objects=[1,2,1,2,3,True,False,'',0,[1,2],[1,2]]
-st=set()
+objects = [1, 2, 1, 2, 3, True, False, '', 0, [1, 2], [1, 2]]
+st = set()
 for obj in objects:
-       st.add(id(obj))
+    st.add(id(obj))
 print(len(st))
 
-st1=list()
+st1 = list()
 for i in st:
-    st1.append(ctypes.cast(i,ctypes.py_object).value)
+    st1.append(ctypes.cast(i, ctypes.py_object).value)
 print(objects)
 print(st)
 print(st1)

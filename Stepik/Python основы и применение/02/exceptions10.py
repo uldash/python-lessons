@@ -19,16 +19,21 @@ Created on Mon Jul  9 15:34:36 2018
 
 @author: user
 """
+
+
 class NonPositiveError(Exception):
     pass
+
+
 class PositiveList(list):
-    def append(self,x):
+    def append(self, x):
         if x > 0:
             super().append(x)
         else:
             raise NonPositiveError
-            
-lst=PositiveList()
+
+
+lst = PositiveList()
 lst.append(2)
 print(lst)
 lst.append(-2)

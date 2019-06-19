@@ -97,7 +97,8 @@ FileNotFoundError
 @author: user
 """
 
-def find_path(graph,start,end,path=[]):
+
+def find_path(graph, start, end, path=[]):
     path = path + [start]
     if start == end:
         return path
@@ -106,35 +107,36 @@ def find_path(graph,start,end,path=[]):
     for node in graph[start]:
         if node not in path:
             newpath = find_path(graph, node, end, path)
-            if newpath: return newpath
-    
-graph=dict()
-result=list()
-txt=open('exceptions0603.txt')
-n=int(txt.readline())
-#n=int(input())
-lst=list()
-for i in range(n):
-    lst=txt.readline().strip().split()
-    #lst=input().strip().split()
-    graph.update({lst[0]:lst[2:]})
-#print(graph)
+            if newpath:
+                return newpath
 
-n=int(txt.readline())
-#n=int(input())
+
+graph = dict()
+result = list()
+txt = open('exceptions0603.txt')
+n = int(txt.readline())
+# n=int(input())
+lst = list()
+for i in range(n):
+    lst = txt.readline().strip().split()
+    # lst=input().strip().split()
+    graph.update({lst[0]: lst[2:]})
+# print(graph)
+
+n = int(txt.readline())
+# n=int(input())
 lst.clear()
 for i in range(n):
     lst.append(txt.readline().strip())
-    #lst.append(input().strip())
-#print('LST:\n',lst)
-i=1
+    # lst.append(input().strip())
+# print('LST:\n',lst)
+i = 1
 for child in lst[1:]:
-    #print(child,lst[:i])    
+    # print(child,lst[:i])
     for parent in lst[:i]:
-        if find_path(graph,child,parent) and result.count(child)==0:
+        if find_path(graph, child, parent) and result.count(child) == 0:
             result.append(child)
-    i+=1
-    
-print('\n'.join(result))
-txt.close()    
+    i += 1
 
+print('\n'.join(result))
+txt.close()

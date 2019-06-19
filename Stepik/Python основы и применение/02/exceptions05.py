@@ -21,16 +21,18 @@ https://docs.python.org/3/library/exceptions.html#exception-hierarchy
 
 @author: user
 """
+
+
 def foo():
     1/0
 
 
 try:
     foo()
-#except (ZeroDivisionError,ArithmeticError,AssertionError) as err:
+# except (ZeroDivisionError,ArithmeticError,AssertionError) as err:
 #    print(type(err).__name__)
-except  ZeroDivisionError:
-   print('ZeroDivisionError')
+except ZeroDivisionError:
+    print('ZeroDivisionError')
 except ArithmeticError:
     print('ArithmeticError')
 except AssertionError:

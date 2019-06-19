@@ -28,18 +28,18 @@ append в лог отправлялось сообщение, состоящее
 программе будет доступен этот класс, и он будет содержать метод log, 
 описанный выше.
 '''
-import time
+
 
 class Loggable:
     def log(self, msg):
         print(str(time.ctime()) + ": " + str(msg))
 
-class LoggableList(list,Loggable):
-    def append(self,x):
+
+class LoggableList(list, Loggable):
+    def append(self, x):
         super().append(x)
         self.log(x)
-        
-x=LoggableList()
+
+
+x = LoggableList()
 x.append(4)
-        
-        

@@ -12,8 +12,8 @@ Created on Wed Jul  4 14:25:42 2018
 @author: user
 """
 
-n=int(input())
-s=0
+n = int(input())
+s = 0
 for i in range(n):
-    s+=int(input())
+    s += int(input())
 print(s)

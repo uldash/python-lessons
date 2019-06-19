@@ -110,44 +110,49 @@ foo
 '''
 # Скорее всего решение не проходит из-за слишком высокой вложенности при
 # рекурсивных вызовах
-def _create(namespace,parent,d):
+
+
+def _create(namespace, parent, d):
     if parent in d.keys():
-        d[parent][0].update({namespace:[{}]})
+        d[parent][0].update({namespace: [{}]})
     else:
         for key in d.keys():
-            _create(namespace,parent,d[key][0])
-            
-def _add(namespace,var,d):
+            _create(namespace, parent, d[key][0])
+
+
+def _add(namespace, var, d):
     if namespace in d.keys():
         d[namespace].append(var)
     else:
         for key in d.keys():
-            _add(namespace,var,d[key][0])
-            
-def _get(namespace,var,d):
+            _add(namespace, var, d[key][0])
+
+
+def _get(namespace, var, d):
     global output
     if namespace in d.keys():
-        if d[namespace].count(var)>0:
-            output=namespace
+        if d[namespace].count(var) > 0:
+            output = namespace
     else:
         for key in d.keys():
-            if d[key].count(var)>0:
-                output=key
-            _get(namespace,var,d[key][0])
+            if d[key].count(var) > 0:
+                output = key
+            _get(namespace, var, d[key][0])
 
-outputlst=[]
-d={'global':[{}]}
-n=int(input())
+
+outputlst = []
+d = {'global': [{}]}
+n = int(input())
 for i in range(n):
-    cmd,nmsp,var=input().split()
-    if cmd=='create':
-        _create(nmsp,var,d)
-    elif cmd=='add':
-        _add(nmsp,var,d)
-    if cmd=='get':
-        output=None                
-        _get(nmsp,var,d)
-        outputlst.append(output)        
-#print('\n',d)
+    cmd, nmsp, var = input().split()
+    if cmd == 'create':
+        _create(nmsp, var, d)
+    elif cmd == 'add':
+        _add(nmsp, var, d)
+    if cmd == 'get':
+        output = None
+        _get(nmsp, var, d)
+        outputlst.append(output)
+# print('\n',d)
 for i in outputlst:
     print(i)
