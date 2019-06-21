@@ -14,8 +14,8 @@ import requests
 import re
 
 #html = input().strip()
-#html = "http://pastebin.com/raw/7543p0ns"#3 test
-html = "http://pastebin.com/raw/hfMThaGb"  #2 test
+# html = "http://pastebin.com/raw/7543p0ns"#3 test
+html = "http://pastebin.com/raw/hfMThaGb"  # 2 test
 saits = set()
 
 first_page = requests.get(html)
@@ -25,7 +25,7 @@ if first_page.status_code == 200:
     #urls = re.findall(r"(<a.+href=[\"\'][\w\-]+.*?[\"\'])", first_page.text)
     urls = re.findall(r"(<a.+href=[\"\'].*?[\"\'].*>)", first_page.text)
     for url in urls:
-        #print(url)
+        # print(url)
         sait = re.search(r"([\w\-\._]+\.(?!open)[\w]+)", url)
         if sait:
             saits.add(sait.group())

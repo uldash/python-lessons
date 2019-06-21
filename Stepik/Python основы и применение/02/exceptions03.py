@@ -6,7 +6,7 @@ Created on Mon Jul  9 10:50:52 2018
 """
 
 try:
-    15/0
+    15 / 0
     # err
 except ZeroDivisionError:  # isinstance(err,ZeroD)ivisionError)==True
     print("Division by zero")

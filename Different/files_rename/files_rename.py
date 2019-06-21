@@ -28,8 +28,8 @@ def main(path):
                 else:
                     zero_symbol = ''
                 new_name = os.path.join(
-                    path, zero_symbol + match[0] + ' ' + re.sub(
-                        r'..Серия.\d+.', r'', name))
+                    path, zero_symbol + match[0] + ' ' +
+                    re.sub(r'..Серия.\d+.', r'', name))
                 print(new_name + '\n')
                 os.rename(fullname, new_name)
 

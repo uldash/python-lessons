@@ -37,7 +37,7 @@ def fib(n, m):
         return pisano[:-2]
 
     pisano = find_pisano(n, m)
-    #print(pisano)
+    # print(pisano)
     #print(pisano[n % len(pisano)])
     return pisano[n % len(pisano)]
 

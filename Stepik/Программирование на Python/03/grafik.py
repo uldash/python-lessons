@@ -7,11 +7,11 @@ Created on Tue Jul  3 19:54:36 2018
 
 from pylab import *
 
-x=linspace(0,5,10)
-y=x**2
+x = linspace(0, 5, 10)
+y = x**2
 
 figure()
-plot(x,y,'r')
+plot(x, y, 'r')
 xlabel('x')
 xlabel('y')
 title('title')

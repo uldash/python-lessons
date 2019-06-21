@@ -10,7 +10,9 @@ def find_value(f, x):
     print("x =", x, "-> f(x) =", f(x))
 
 
-my_func = lambda x: 1 / (1 + x**2)
+def my_func(x):
+    return 1 / (1 + x**2)
+
 
 find_value(my_func, 2.0)
 find_value(lambda x: x * (1 - x), 0.5)

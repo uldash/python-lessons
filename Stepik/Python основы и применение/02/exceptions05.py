@@ -24,7 +24,7 @@ https://docs.python.org/3/library/exceptions.html#exception-hierarchy
 
 
 def foo():
-    1/0
+    1 / 0
 
 
 try:

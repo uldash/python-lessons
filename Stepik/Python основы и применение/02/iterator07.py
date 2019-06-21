@@ -17,9 +17,9 @@ def primes():
     p = 2
     f = 1
     while True:
-        if (f+1) % p == 0:
+        if (f + 1) % p == 0:
             yield p
-        f = p*f
+        f = p * f
         p += 1
 
 

@@ -10,7 +10,9 @@ from math import exp, sin, cos, tan
 
 # Функция для использования в декораторе
 def F(f):
-    res = lambda x: exp(-f(x)**2)
+    def res(x):
+        return exp(-f(x)**2)
+
     return res
 
 

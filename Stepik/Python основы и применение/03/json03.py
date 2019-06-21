@@ -59,11 +59,11 @@ def bfs(graph, start):
 #lst = json.loads(input())
 with open("example03.json", "r") as f:
     lst = json.load(f)
-#print(lst)
+# print(lst)
 graph = dict()
 for i in lst:
     graph.setdefault(i["name"], set(i["parents"]))
-#print(graph)
+# print(graph)
 
 result = list()
 for i in graph:

@@ -14,12 +14,12 @@ if x % 2 == 1:
 print(x)
 
 for i in range(5):
-    x = i*i
+    x = i * i
 print(x)
 
 try:
     for i in []:
-        y = i*i
+        y = i * i
     print(y)
 except NameError as err:
     print(err)

@@ -68,11 +68,11 @@ while k <= n**2:
         scht_napr = 0
     except:
         napr = (napr + 1) % 4
-        #print(b[napr])
-        if scht_napr > 4:  #если 4 раза подрят повернулись, но не сдвинулись - выходим
+        # print(b[napr])
+        if scht_napr > 4:  # если 4 раза подрят повернулись, но не сдвинулись - выходим
             break
         scht_napr += 1
-    #printmatrix(a)
+    # printmatrix(a)
 
 printmatrix(a)
-#print(d)
+# print(d)

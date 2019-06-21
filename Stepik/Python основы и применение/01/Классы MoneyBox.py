@@ -12,7 +12,7 @@ class MoneyBox:
         self.mb_count = 0
 
     def can_add(self, v):
-        if self.mb_count+v <= self.mb_capacity:
+        if self.mb_count + v <= self.mb_capacity:
             return True
         else:
             return False

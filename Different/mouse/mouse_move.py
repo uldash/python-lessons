@@ -1,3 +1,5 @@
+import os
+import ctypes
 MOUSEEVENTF_ABSOLUTE = 0x8000
 MOUSEEVENTF_LEFTDOWN = 0x0002
 MOUSEEVENTF_LEFTUP = 0x0004
@@ -11,9 +13,6 @@ MOUSEEVENTF_XDOWN = 0x0080
 MOUSEEVENTF_XUP = 0x0100
 MOUSEEVENTF_WHEEL = 0x0800
 MOUSEEVENTF_HWHEEL = 0x01000
-
-import ctypes
-import os
 
 SetCursorPos = ctypes.windll.user32.SetCursorPos
 mouse_event = ctypes.windll.user32.mouse_event

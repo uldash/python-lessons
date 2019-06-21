@@ -1,4 +1,3 @@
-
 from binascii import hexlify
 from getpass import getpass
 from sys import stdin

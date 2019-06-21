@@ -14,7 +14,7 @@ def list_sum(lst):
 
 
 def sum(a, b):
-    return a+b
+    return a + b
 
 
 y = sum(14, 28)

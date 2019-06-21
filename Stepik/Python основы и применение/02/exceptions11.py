@@ -13,9 +13,9 @@ class BadName(Exception):
 
 def greet(name):
     if name[0].isupper():
-        return "Hello, "+name
+        return "Hello, " + name
     else:
-        raise BadName(name+' is inappropriate name')
+        raise BadName(name + ' is inappropriate name')
 
 
 # Проверяем, вызвали скрипт как программу или импортировали как модуль

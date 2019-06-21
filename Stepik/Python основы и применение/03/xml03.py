@@ -37,10 +37,8 @@ kubiks = {'red': 0, 'green': 0, 'blue': 0}
 def dd(root, kubiks, stack):
     stack.insert(0, stack[0] + 1)
     for child in root:
-        kubiks.update({
-            child.attrib['color']:
-            kubiks[child.attrib['color']] + stack[0]
-        })
+        kubiks.update(
+            {child.attrib['color']: kubiks[child.attrib['color']] + stack[0]})
         dd(child, kubiks, stack)
     stack.pop(0)
 
@@ -48,9 +46,9 @@ def dd(root, kubiks, stack):
 #tree = ET.parse(XML_FILE)
 tree = ET.ElementTree(ET.fromstring(input()))
 root = tree.getroot()
-#print(root.attrib['color'])
+# print(root.attrib['color'])
 kubiks.update({root.attrib['color']: kubiks[root.attrib['color']] + stack[0]})
-#print(kubiks[root.attrib['color']])
+# print(kubiks[root.attrib['color']])
 dd(root, kubiks, stack)
 
 print(' '.join(str(kubiks[i]) for i in kubiks))

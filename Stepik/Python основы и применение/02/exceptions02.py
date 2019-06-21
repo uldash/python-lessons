@@ -8,7 +8,7 @@ Created on Mon Jul  9 10:30:28 2018
 
 def f(x, y):
     try:
-        return x/y
+        return x / y
     # except TypeError:
     #    print('Type error')
     # except ZeroDivisionError:

@@ -25,7 +25,6 @@ s.sort()
 # print('\n'.join(s))
 with open('main.txt', 'w') as w:
     w.write('\n'.join(s))
-
 '''
 import os
 

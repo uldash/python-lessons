@@ -40,9 +40,9 @@ Sample Output 3:
 @author: user
 """
 
-from datetime import date,timedelta
+from datetime import date, timedelta
 
-tmp=[int(i) for i in input().split()]
-dt=date(tmp[0],tmp[1],tmp[2])
-dt+=timedelta(days=int(input()))
-print(dt.year,dt.month,dt.day)
+tmp = [int(i) for i in input().split()]
+dt = date(tmp[0], tmp[1], tmp[2])
+dt += timedelta(days=int(input()))
+print(dt.year, dt.month, dt.day)

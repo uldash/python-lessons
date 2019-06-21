@@ -12,7 +12,7 @@ print(x is None)
 
 
 def closest_mod_5(x):
-    lst = [i for i in range(x, x+5+1)]
+    lst = [i for i in range(x, x + 5 + 1)]
     for i in lst:
         if i % 5 == 0:
             return i

@@ -1,9 +1,7 @@
-
 from simplecrypt import encrypt, decrypt
 
 from os.path import exists
 from os import unlink
-
 
 # this is an example program that reads and writes encrypted files.
 
@@ -13,7 +11,6 @@ from os import unlink
 # if the file does exist, is is read, and the number of green bottles
 # is reduced.  if there are no green bottles left, then the file is
 # deleted, otherwise it is written with the new number.
-
 
 PASSWORD = "secret"
 FILENAME = "encrypted.txt"
@@ -28,7 +25,7 @@ def main():
         n_bottles = int(data.split(" ")[0]) - 1
     else:
         n_bottles = 10
-    
+
     if n_bottles > 0:
         data = "%d green bottles" % n_bottles
         print("writing...")

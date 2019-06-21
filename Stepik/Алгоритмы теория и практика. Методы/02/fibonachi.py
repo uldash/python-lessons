@@ -29,4 +29,4 @@ with Profiler() as p:
 f = [1, 1]
 with Profiler() as p:
     fib_massiv(100, f)
-print(*f)  #n=40 - 0.000sec
+print(*f)  # n=40 - 0.000sec

@@ -6,4 +6,4 @@ Created on Tue Jul  3 11:29:08 2018
 """
 
 import subprocess
-subprocess.call(['python','-h'])
+subprocess.call(['python', '-h'])

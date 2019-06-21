@@ -91,7 +91,7 @@ artists = list()
 with open("dataset_24476_4.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
-        #print(line.strip())
+        # print(line.strip())
         res = requests.get(Api_url + line.strip(), headers=headers)
         data = res.json()
         #print(line.strip(), data["sortable_name"], data["birthday"])

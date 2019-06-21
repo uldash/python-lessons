@@ -30,5 +30,5 @@ for line in sys.stdin:
     line = line.rstrip()
     x = re.search(pattern, line)
     if x:
-        #print(x.group(0))
+        # print(x.group(0))
         sys.stdout.write(''.join(x.group(0)) + '\n')

@@ -56,7 +56,7 @@ d = {
 rnumber = input().strip() + ' '
 res, i = 0, 0
 while i < len(rnumber):
-    #print(i)
+    # print(i)
     #print(rnumber[i:i + 2])
     if rnumber[i:i + 2] in d.keys():
         res += d[rnumber[i:i + 2]]

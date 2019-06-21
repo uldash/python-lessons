@@ -20,6 +20,8 @@ def printab(a, b=10):
 def printab(a=10, b=10):
     print(a)
     print(b)
+
+
 # INCORECT
 
 

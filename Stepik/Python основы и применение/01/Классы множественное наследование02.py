@@ -29,5 +29,6 @@ class F(A, B):
 class E(B, C, D):
     pass
 
+
 # print(F.mro())
 # print(E.mro())

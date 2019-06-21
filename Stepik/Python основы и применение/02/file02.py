@@ -14,7 +14,8 @@ c
 ab
 '''
 lst = []
-with open('dataset_24465_4.txt') as o, open('dataset_24465_4_out.txt', 'w') as w:
+with open('dataset_24465_4.txt') as o, open('dataset_24465_4_out.txt',
+                                            'w') as w:
     for line in o:
         lst.insert(0, line)
     w.write(''.join(lst))

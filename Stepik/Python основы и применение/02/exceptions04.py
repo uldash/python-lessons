@@ -8,7 +8,7 @@ Created on Mon Jul  9 10:55:10 2018
 
 def divide(x, y):
     try:
-        result = x/y
+        result = x / y
     except ZeroDivisionError:
         print('division by zero')
     else:
