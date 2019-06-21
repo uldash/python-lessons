@@ -35,7 +35,7 @@ class ExtendedStack(list):
 
     def div(self):
         # операция целочисленного деления
-        
+     
 Примечание
 Для добавления элемента на стек используется метод append, а для снятия со стека – метод pop.
 Гарантируется, что операции будут совершаться только когда в стеке есть хотя бы два элемента.
@@ -45,7 +45,7 @@ class ExtendedStack(list):
 class ExtendedStack(list):
     def sum(self):
         # операция сложения
-        self.append(self.pop() + self.pop())
+        self.append(self.pop()+self.pop())
 
     def sub(self):
         # операция вычитания
@@ -53,11 +53,11 @@ class ExtendedStack(list):
 
     def mul(self):
         # операция умножения
-        self.append(self.pop() * self.pop())
+        self.append(self.pop()*self.pop())
 
     def div(self):
         # операция целочисленного деления
-        self.append(self.pop() // self.pop())
+        self.append(self.pop()//self.pop())
 
 
 lst = ExtendedStack()

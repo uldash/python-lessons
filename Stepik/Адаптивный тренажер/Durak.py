@@ -36,6 +36,8 @@ Sample Output 3:
 
 Error
 '''
+
+
 val = ('6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A')
 
 First, Second = input().split()

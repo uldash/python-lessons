@@ -28,6 +28,8 @@ Sample Output 3:
 
 -1
 '''
+
+
 stroka = input().strip()
 pattern = input().strip()
 i = 0
