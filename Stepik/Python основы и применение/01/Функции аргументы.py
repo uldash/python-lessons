@@ -23,8 +23,8 @@ def printab(a=10, b=10):
 
 
 # INCORECT
-
-
-def printab(a=10, b):
+'''
+    def printab(a=10, b):
     print(a)
     print(b)
+'''

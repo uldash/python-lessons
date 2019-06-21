@@ -87,9 +87,9 @@ Yes
 Yes
 No
 '''
+
+
 # Отыщем путь в заданном графе
-
-
 def find_path(graph, start, end, path=[]):
     path = path + [start]
     if start == end:
