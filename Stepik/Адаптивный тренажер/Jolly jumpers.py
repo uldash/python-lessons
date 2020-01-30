@@ -33,7 +33,7 @@ Sample Output 3:
 
 Jolly
 '''
-
+print('Введите последовательность\nПример:\n1 -3 -4 -1 1')
 j = list(map(int, input().split()))
 
 r = set(range(1, len(j)))
