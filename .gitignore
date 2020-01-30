@@ -106,3 +106,4 @@ venv.bak/
 # vscode setings
 .vscode/
 .vscode
+.*env/
